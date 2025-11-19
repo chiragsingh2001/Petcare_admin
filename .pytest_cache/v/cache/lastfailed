@@ -1,0 +1,10 @@
+{
+  "tests/test_login.py::test_login[validuser@example.com-validPassword-True]": true,
+  "tests/test_login.py::test_login[validuser@example.com-wrongPassword-False]": true,
+  "tests/test_login.py::test_login[unregistered@example.com-somePassword-False]": true,
+  "tests/test_login.py::test_login[--False]": true,
+  "tests/test_login.py::test_login[--False-wihtout email id and passowrd]": true,
+  "tests/test_login.py::test_login[petcare.admin@yopmail.com-wrongPassword-False-With valid Email and invalid password]": true,
+  "tests/test_login.py::test_login[unregistered@example.com-PetCare@Admin2025-False-With invalid Email and valid password]": true,
+  "tests/test_user.py::test_add_user[hemanth-hemanth@mailinator.com-7225163231-Admin@123]": true
+}
