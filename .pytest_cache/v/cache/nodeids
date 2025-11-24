@@ -21,6 +21,7 @@
   "tests/test_login.py::test_login[validuser@example.com-validPassword-True]",
   "tests/test_login.py::test_login[validuser@example.com-wrongPassword-False]",
   "tests/test_user.py::test_add_user",
+  "tests/test_user.py::test_add_user[hemanth-hemanth@mailinator.com-7225163231-Admin@123-C:\\\\Users\\\\ADMIN\\\\OneDrive\\\\Pictures\\\\Screenshots\\\\App_point_3.png]",
   "tests/test_user.py::test_add_user[hemanth-hemanth@mailinator.com-7225163231-Admin@123]",
   "tests/test_user.py::test_visibility"
 ]
