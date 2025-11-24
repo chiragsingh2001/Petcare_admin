@@ -9,10 +9,12 @@ class UserManagement:
         self.user_email = self.page.locator("xpath=//*[@id='userForm']/div[1]/div/div[2]/input")
         self.user_phone = self.page.locator("//*[@id='userForm']/div[1]/div/div[3]/div/div/input")
         self.user_pass = self.page.locator("//*[@id='password']")
-        self.user_role = self.page.locator("//select[@id='userForm']/div[1]/div/div[5]/select")
-        self.user_profile = self.page.get_by_label("profile_pic")
+        self.user_role = self.page.locator("//*[@id='userForm']/div[1]/div/div[5]/select")
+        self.user_profile = self.page.locator("#profile_pic")
+        self.user_add = self.page.locator("xpath=//*[@id='userForm']/div[2]/button[1]")
     def goto(self):
         self.page.goto("https://petcare.ezxdemo.com/admin/user/all")
+        self.page.wait_for_load_state("load") 
         
     def add_user(self):
         try:
@@ -25,13 +27,15 @@ class UserManagement:
             # Code that runs if an exception occurs
             print(f"An error occurred:{e}")
     
-    def add_details(self, name, email, phone, password):
+    def add_details(self, name, email, phone, password, image):
         self.user_name.fill(name)
         self.user_email.fill(email)
         self.user_phone.fill(phone)
         self.user_pass.fill(password)
         self.user_role.select_option(value="Pet Parent")
-        self.user_profile.click()
+        self.user_profile.set_input_files(image)
+        self.user_add.click()
+
 
 
 
