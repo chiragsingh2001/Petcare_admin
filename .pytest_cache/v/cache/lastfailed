@@ -4,7 +4,8 @@
   "tests/test_login.py::test_login[unregistered@example.com-somePassword-False]": true,
   "tests/test_login.py::test_login[--False]": true,
   "tests/test_login.py::test_login[--False-wihtout email id and passowrd]": true,
-  "tests/test_login.py::test_login[petcare.admin@yopmail.com-wrongPassword-False-With valid Email and invalid password]": true,
-  "tests/test_login.py::test_login[unregistered@example.com-PetCare@Admin2025-False-With invalid Email and valid password]": true,
-  "tests/test_user.py::test_add_user[hemanth-hemanth@mailinator.com-7225163231-Admin@123]": true
+  "tests/test_user.py::test_add_user[hemanth-hemanth@mailinator.com-7225163231-Admin@123]": true,
+  "tests/test_user.py::test_add_user[hemanth-hemanth@mailinator.com-7225163231-Admin@123-C:\\\\Users\\\\ADMIN\\\\OneDrive\\\\Pictures\\\\Screenshots\\\\App_point_3.png-with valid and new email-1]": true,
+  "tests/test_user.py::test_add_user[hemanth-hemanth@mailinator.com-7225133231-Admin@123-C:\\\\Users\\\\ADMIN\\\\OneDrive\\\\Pictures\\\\Screenshots\\\\App_point_3.png-with valid but registered email and unregistered number-2]": true,
+  "tests/test_user.py::test_add_user[hemanth-laalchand@mailinator.com-7225163231-Admin@123-C:\\\\Users\\\\ADMIN\\\\OneDrive\\\\Pictures\\\\Screenshots\\\\App_point_3.png-with valid but already registered number and unregistered email-3]": true
 }
