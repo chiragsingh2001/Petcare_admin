@@ -27,14 +27,12 @@ class UserManagement:
     def goto(self):
         self.page.goto("https://petcare.ezxdemo.com/admin/user/all")
         self.page.wait_for_load_state("load") 
-        
+    
+    # clicking on the add button    
     def add_user(self):
         try:
-            if self.add_button.is_visible:
-                self.add_button.click()
-            else:
-                self.add_button.wait_for(state="visible")
-                self.add_button.click()
+            expect(self.add_button).to_be_visible()
+            self.add_button.click()
         except Exception as e:
             # Code that runs if an exception occurs
             print(f"An error occurred:{e}")
@@ -59,7 +57,7 @@ class UserManagement:
         self.user_role.select_option(value="Pet Parent")
         self.user_profile.set_input_files(image)
         self.user_add.click()
-    
+   
 
 
 
